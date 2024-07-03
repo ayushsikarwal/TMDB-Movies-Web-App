@@ -1,0 +1,385 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: white;
+  transition: background-color 0.3s ease;
+}
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0; /* Add this line to ensure the parent elements have a defined height */
+}
+body.dark {
+  background-color: #131617;
+}
+nav {
+  
+  align-items: center;
+  background-color: white;
+  padding: 30px 25px;
+  min-height: 150px;
+  /* height: 50%; Increase the height value */
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+  z-index: 1;
+  background-image: url("./images/bb.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  justify-content: center;
+  
+}
+
+nav.dark {
+  background-color:#131617;
+}
+
+.nav--logo_text {
+  color: white;
+  margin-right: auto;
+  font-size: 30px;
+  margin-left: 48%;
+  justify-content: center;
+}
+.ll{
+  display: flex;
+}
+nav.dark .nav--logo_text {
+  color: #f5f5f5;
+  font-size: 30px;
+  justify-content: center;
+  margin-left: 48%;
+}
+
+/* .nav--logo_text {
+  color: #131617;
+  margin-right: auto;
+  font-size: 30px;
+}
+
+nav.dark .nav--logo_text{
+  color:#F5F5F5;
+  margin-right: auto;
+  font-size: 30px;
+} */
+
+/* .nav--title {
+  color: #DEEBF8;
+} */
+
+.toggler {
+  display: flex;
+  align-items: center;
+}
+
+.toggler p {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* .toggler--slider{
+  width:30px;
+  height:15px;
+  border-radius: 35%;
+  margin-left:5px;
+  margin-right:5px;
+} */
+.toggler--slider {
+  width: 35px;
+  height: 15px;
+  background-color: #2B283A;
+  border-radius: 2rem;
+  margin-inline: 7px;
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: 1px solid black;
+  box-sizing: content-box;
+}
+
+nav.dark .toggler--slider {
+  border-color: white;
+  background-color: #F5F5F5;
+}
+
+.toggler--slider--circle {
+  height: 15px;
+  width: 15px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+nav.dark .toggler--slider--circle {
+  background-color: black;
+}
+
+.toggler--light {
+  color: #918E9B;
+}
+
+nav.dark .toggler--light {
+  color: #918E9B;
+}
+
+.toggler--dark {
+  color: #D5D4D8;
+}
+
+nav.dark .toggler-dark {
+  color: #FFFFFF;
+}
+
+nav.dark .toggler--slider {
+  justify-content: flex-end;
+}
+main {
+  background-color: white;
+}
+
+main.dark {
+  background-color: #131617;
+}
+
+.column {
+  display: flex;
+  overflow-x: auto;
+  flex-wrap:nowrap;
+  margin-right:auto;
+}
+
+.mv {
+  flex: 0 0 160px; /* Adjust the width of each movie poster */
+  margin: 10px;
+}
+
+.mv:hover{
+  transform: scale(1.03);
+}
+
+.overlay{
+  position: absolute;
+  background: rgba(0,0,0,0.8) ;
+  width:76%;
+  transition:0.5s ease;
+  bottom:0;
+  font-size:20px;
+  padding:20px;
+  text-align: center;
+  height:10px;
+
+}
+.main--img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  border: 2px solid black;
+}
+
+/* .main--img:hover{
+  transform: scale(1.1);
+} */
+
+
+main.dark .main--img:hover{
+  transform: scale(1.1);
+}
+
+h2.dark {
+  color: white;
+  font-size:30px;
+  margin-left:20px;
+  
+}
+
+h2{
+  color:black;
+  font-size:30px;
+  margin-left:20px;
+}
+
+.fluid {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  overflow-y: auto;
+  /* Change from space-between to flex-start */
+}
+
+.big {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+
+.big.dark {
+  background-color: #131617;
+}
+
+.butt.dark {
+  color:black;
+  background-color:white;
+  height:35px;
+  width:120px;
+  margin-top: 15px;
+  margin-left: 15px;
+  border-radius: 2em;
+  font-size: 20px;
+  font-weight: bold;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  
+}
+
+.butt.light{
+  color: white;
+  background-color: black;
+  height:35px;
+  width:120px;
+  margin-top: 15px;
+  margin-left: 15px;
+  border-radius: 2em;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.butt.dark:hover{
+  transform: scale(1.1);
+}
+.butt.light:hover{
+  transform: scale(1.1);
+}
+
+ 
+.sea-txt{
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+.tog-search{
+  border-radius: 2em;
+  height:25px;
+  width:80%;
+  margin-left: 10%;
+  margin-bottom: 10px;
+}
+
+.Addtofav{
+  font-size: 15px;
+  color:white;
+}
+.removefromfav{
+  font-size: 12px;
+  color:white;
+}
+
+.rat{
+  display: flex;
+}
+
+.mov--img{
+    height: 10px;
+    width:10px;
+}
+
+.df{
+  display: flex;
+}
+
+.card--star{
+  height:15px;
+  margin-top: 8px;
+  margin-right:5px;
+}
+.card--dlt{
+  height:15px;
+  margin-top: 8px;
+  margin-right:5px;
+}
+
+.gray{
+  margin-top: 5px;
+  margin-left:5px;
+}
+
+main.dark .gray{
+  color:#FFFFFF;
+}
+
+.card--title{
+  justify-self: center;
+  align-self: center;
+}
+
+main.dark .card--title{
+  color:#FFFFFF;
+}
+
+.main--img {
+  height:200px;
+  width:100%;
+  cursor: pointer;
+  object-fit: cover;
+  border: 2px solid black;
+}
+
+main.dark .main--img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+  border: 2px solid white;
+}
+
+.movie-details {
+  position: absolute;
+  top:0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 10px;
+  opacity: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 90%;
+  max-width: 600px; /* Adjust the maximum width as needed */
+  height: 390px; /* Set the desired fixed height */
+  overflow: auto; /* Enable scrolling */
+  transition: opacity 0.3s;
+  z-index: 1;
+}
+
+/* Hide the scroll bar */
+.movie-details::-webkit-scrollbar {
+  width: 0.5em;
+  background-color: transparent;
+}
+
+.movie-details::-webkit-scrollbar-thumb {
+  background-color: transparent;
+}
+
+.mv {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+.df:hover .movie-details {
+  opacity: 1;
+}
+
+.card--stats {
+  position: relative;
+  z-index: 2;
+}
+
+
+.gray {
+  color: gray;
+}
+
+.card--title {
+  margin-top: 10px;
+}
