@@ -21,12 +21,12 @@ const App = () => {
     let url="";
     if(searchvalue === ""){
       url =
-      `https://api.themoviedb.org/3/movie/top_rated?api_key=47d00e77d7dedb5f103a1141f5d9eb66`;
+      `https://api.themoviedb.org/3/movie/top_rated?api_key=84fd3baed4716ed75c3a5a2c3770498f`;
 
     }
 
     else{
-      url=`https://api.themoviedb.org/3/search/movie?api_key=47d00e77d7dedb5f103a1141f5d9eb66&&query=${searchvalue}`;
+      url=`https://api.themoviedb.org/3/search/movie?api_key=84fd3baed4716ed75c3a5a2c3770498f&&query=${searchvalue}`;
     }
     const response = await fetch(url);
     const responseJson = await response.json();
@@ -47,7 +47,7 @@ const App = () => {
   const getMovieRequestnew = async (searchvalue) => {
     let url="";
     if(searchvalue === ""){
-      url =`https://api.themoviedb.org/3/movie/upcoming?api_key=47d00e77d7dedb5f103a1141f5d9eb66`;
+      url =`https://api.themoviedb.org/3/movie/upcoming?api_key=84fd3baed4716ed75c3a5a2c3770498f`;
 
     }
 
@@ -75,7 +75,7 @@ const App = () => {
   const getMovieRequestnewpop = async (searchvalue) => {
     let url="";
     if(searchvalue === ""){
-      url =`https://api.themoviedb.org/3/movie/popular?api_key=47d00e77d7dedb5f103a1141f5d9eb66`;
+      url =`https://api.themoviedb.org/3/movie/popular?api_key=84fd3baed4716ed75c3a5a2c3770498f`;
 
     }
 
@@ -102,7 +102,7 @@ const App = () => {
   const getMovieRequestnewnow = async (searchvalue) => {
     let url="";
     if(searchvalue === ""){
-      url =`https://api.themoviedb.org/3/movie/now_playing?api_key=47d00e77d7dedb5f103a1141f5d9eb66`;
+      url =`https://api.themoviedb.org/3/movie/now_playing?api_key=84fd3baed4716ed75c3a5a2c3770498f`;
 
     }
     
